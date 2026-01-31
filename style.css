@@ -129,11 +129,13 @@ input {
 
 button {
   color: white;
-  padding: 10px 30px;
+  font-size: 18px;
+  padding: 10px 40px;
   font-weight: bold;
   margin: 25px 3vw;
   border-style: none;
   border-radius: 5px;
+  box-shadow: 0 0 5px rgb(51, 51, 51);
   background-color: #596D48;
 }
 
