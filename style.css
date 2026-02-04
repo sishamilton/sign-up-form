@@ -130,11 +130,21 @@ label {
 
 input {
   font-size: 20px;
-  border-style: solid;
-  border-color: lightgray;
   border-radius: 3px;
   border-width: 1px;
+  border-style: solid;
+}
+
+input:not(:focus) {
+  border-color: lightgray;
   box-shadow: none;
+}
+
+input:focus {
+  outline: none;
+  border-style: solid;
+  border-color: blue;
+  box-shadow: 0 0 5px 1px rgb(117, 117, 117);
 }
 
 button {
@@ -157,4 +167,8 @@ button {
   font-weight: bold;
   color:#596D48;
   text-decoration: none;
+}
+
+#password:invalid, #confirm_password:invalid {
+  border-color: red;
 }
