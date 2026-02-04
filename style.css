@@ -106,6 +106,16 @@ form h2, #form_body {
   flex-direction: column;
 }
 
+.ps_toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ps_toggle label {
+  margin-top: 0;
+}
+
 #column1 {
   padding-right: 60px;
 }

@@ -40,7 +40,11 @@
             <label for="email">EMAIL</label>
             <input type="email" id="email" required>
             <label for="password">PASSWORD</label>
-            <input type="password" id="password" required>
+            <input type="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,12}$">
+            <div class="ps_toggle">
+              <label for="show_pw">Show Password</label>
+              <input type="checkbox" id="show_pw" form="dummy">
+            </div>
           </div>
           <div class="columns" id="column2">
             <label for="last_name">LAST NAME</label>
@@ -48,7 +52,11 @@
             <label for="phone_number">PHONE NUMBER</label>
             <input type="tel" id="phone_number">
             <label for="confirm_password">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm_password" required>
+            <input type="password" id="confirm_password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,12}$" required>
+            <div class="ps_toggle">
+              <label for="show_confirm">Show Password</label>
+              <input type="checkbox" id="show_confirm" form="dummy">
+            </div>
           </div>
         </div>
       </div>
@@ -57,4 +65,5 @@
     <p id="log_in_prompt">Already have an account? <a href="https://www.google.com/">Log in</a></p>
   </main>
 </body>
+<script src="./main.js"></script>
 </html>
